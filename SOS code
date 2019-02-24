@@ -1,0 +1,48 @@
+// flashes a LED in a 3dots-3dashes-3dots pattern
+  int led_Pin=7;
+  
+void setup() {
+  pinMode(7, OUTPUT); // set the digital pin as output: 
+  Serial.begin(9600);  
+}
+
+void loop()
+{   
+  // write the 'S'.
+  digitalWrite(led_Pin, HIGH);
+  delay(250);
+  
+  digitalWrite(led_Pin, LOW);
+  delay(250);
+ 
+  digitalWrite(led_Pin, HIGH);
+  delay(250);
+  
+  digitalWrite(led_Pin, LOW);
+  delay(250);
+ 
+  digitalWrite(led_Pin, HIGH);
+  delay(250);
+
+  digitalWrite(led_Pin, LOW);
+  delay(250);
+  
+  // write the 'O'
+  digitalWrite(led_Pin, HIGH);
+  delay(1000);
+ 
+  digitalWrite(led_Pin, LOW);
+  delay(1000);
+  
+  digitalWrite(led_Pin, HIGH);
+  delay(1000);
+
+  digitalWrite(led_Pin, LOW);
+  delay(1000);
+
+  digitalWrite(led_Pin, HIGH);
+  delay(1000);
+
+  digitalWrite(led_Pin, LOW);
+  delay(1000);
+}
